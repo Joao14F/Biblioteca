@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-/* GET users cool. */
+/* GET users ifc. */
 router.get('/ifc', function(req, res, next) {
   res.render('index', { title: 'Bem vindo ao IFC' });
 });
