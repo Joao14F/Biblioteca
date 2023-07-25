@@ -7,8 +7,18 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET users cool. */
+router.get('/ifc', function(req, res, next) {
+  res.render('index', { title: 'Bem vindo ao IFC' });
+});
+
+/* GET users cool. */
 router.get('/cool', function(req, res, next) {
   res.render('index', { title: 'You are so cool' });
+});
+
+/* GET users cool beach. */
+router.get('/cool/beach', function(req, res, next) {
+  res.send('Adoro praia');
 });
 
 module.exports = router;
