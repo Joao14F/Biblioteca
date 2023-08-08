@@ -103,7 +103,9 @@ async function createAuthors() {
     authorCreate(1, "Ben", "Bova", "1932-11-8", false),
     authorCreate(2, "Isaac", "Asimov", "1920-01-02", "1992-04-06"),
     authorCreate(3, "Bob", "Billings", false, false),
-    authorCreate(4, "Jim", "Jones", "1971-12-16", false),mongodb+srv,//JB:<password>@cluster0.y9qxz5j.mongodb.net/?retryWrites=true&w=majority,
+    authorCreate(4, "Jim", "Jones", "1971-12-16", false),
+  ]);
+}
 async function createBooks() {
   console.log("Adding Books");
   await Promise.all([
@@ -157,7 +159,7 @@ async function createBooks() {
       false
     ),
   ]);
-},
+}
 
 async function createBookInstances() {
   console.log("Adding authors");
@@ -204,4 +206,4 @@ async function createBookInstances() {
     bookInstanceCreate(9, books[0], "Imprint XXX2", false, false),
     bookInstanceCreate(10, books[1], "Imprint XXX3", false, false),
   ]);
-}])}
+}
