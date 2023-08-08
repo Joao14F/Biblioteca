@@ -3,7 +3,7 @@ const mongoose =  rrequire("mongoose");
 const Schema = mongoose.Schema;
 
 const GenreSchema = new Schema({
-    name: {type: String, required: true, minLength: 3, maxLength: 50;},
+    name: {type: String, required: true, minLength: 3, maxLength: 50},
     });
 
   // Virtual for Genre's URL
