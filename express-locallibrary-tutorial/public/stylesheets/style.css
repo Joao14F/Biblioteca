@@ -1,5 +1,20 @@
+body {
+  background-color: rgb(143, 143, 143);
+}
+
 .sidebar-nav {
   margin-top: 20px;
   padding: 0;
   list-style: none;
+}
+
+.sidebar-nav a {
+  color: floralwhite;
+}
+
+/* Lista livro*/
+
+.livros {
+  list-style: none;
+  margin-top: 5px;
 }
