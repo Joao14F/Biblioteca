@@ -6,15 +6,24 @@ body {
   margin-top: 20px;
   padding: 0;
   list-style: none;
+  background-color: lightslategray;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .sidebar-nav a {
-  color: floralwhite;
+  color: rgb(152, 235, 238);
+  font-weight: bold;
+  margin: 5px 0px;
 }
 
 /* Lista livro*/
 
-.livros {
-  list-style: none;
-  margin-top: 5px;
+.link {
+  color: rgb(152, 235, 238);
+}
+
+button.btn a {
+  text-decoration: none;
+  color: white;
 }

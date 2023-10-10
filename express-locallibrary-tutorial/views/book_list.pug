@@ -6,7 +6,7 @@ block content
   ul
     each book in book_list
       li.livros 
-        a(href=book.url) #{book.title}
+        a(href=book.url).link #{book.title}
         |  (#{book.author.name})
 
     else
