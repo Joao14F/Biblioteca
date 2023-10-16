@@ -23,6 +23,10 @@ body {
   color: rgb(152, 235, 238);
 }
 
+.link:hover {
+  color: rgb(152, 235, 238);
+}
+
 button.btn a {
   text-decoration: none;
   color: white;
