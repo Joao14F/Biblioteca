@@ -11,7 +11,18 @@ const catalogRouter = require("./routes/catalog"); // Import routes for "catalog
 const compression = require("compression");
 const helmet = require("helmet");
 
+// Create the Express application object
 const app = express();
+
+// Add helmet to the middleware chain.
+// Set CSP headers to allow our Bootstrap and Jquery to be served
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      "script-src": ["'self'", "code.jquery.com", "cdn.jsdelivr.net"],
+    },
+  }),
+);
 
 // Set up rate limiter: maximum of twenty requests per minute
 const RateLimit = require("express-rate-limit");
